@@ -7,7 +7,7 @@ export default function WeatherWidget(props){
 
 
     useEffect(() => {
-        axios.get("https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=25f2fa2e4157aa6ba4d50508dd7fbd8f")
+        axios.get("https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid={API KEY}")
         .then((res) => {
             setWeatherData(res.data)
             console.log()
